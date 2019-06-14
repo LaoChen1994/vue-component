@@ -8,9 +8,9 @@
             currPos >= index ? `icon-${item.icon} textActive` : 'deactive'
           "
         >
-          <span :class="currPos >= index ? 'textActive' : 'deactive'">{{
-            item.process
-          }}</span>
+          <span :class="currPos >= index ? 'textActive' : 'deactive'">
+            {{ item.process }}
+          </span>
         </div>
       </div>
       <!-- <div class="pd-text">{{ item.process }}</div> -->
@@ -23,13 +23,6 @@
 export default {
   data() {
     return {
-      pbData: [
-        { process: "步骤1", icon: "gou" },
-        { process: "步骤2", icon: "gou" },
-        { process: "步骤3", icon: "gou" },
-        { process: "步骤4", icon: "gou" },
-        { process: "步骤5", icon: "gou" }
-      ],
       currPos: 0
     };
   },
@@ -45,6 +38,9 @@ export default {
           ? this.currPos + 1
           : this.pbData.length;
     }
+  },
+  props: {
+    pbData: Array
   }
 };
 </script>

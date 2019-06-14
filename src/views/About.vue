@@ -10,7 +10,7 @@
       ></top-tabber>
     </div>
     <div class="about-process">
-      <process-bar ref="processBar"></process-bar>
+      <process-bar ref="processBar" :pbData="pbData"></process-bar>
       <button @click="nextProcess" class="nextBtn">下一步</button>
     </div>
   </div>
@@ -26,6 +26,13 @@ export default {
         { tabTitle: '选择水果', selection: ['苹果', '香蕉', '李子'] },
         { tabTitle: '选择蔬菜', selection: ['白菜', '冬瓜', '土豆丝'] },
         { tabTitle: '选择肉类', selection: ['猪肉', '牛肉', '鸡肉'] }
+      ],
+      pbData: [
+        { process: '步骤1', icon: 'gou' },
+        { process: '步骤2', icon: 'gou' },
+        { process: '步骤3', icon: 'gou' },
+        { process: '步骤4', icon: 'gou' },
+        { process: '步骤5', icon: 'gou' }
       ]
     }
   },

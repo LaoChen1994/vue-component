@@ -39,5 +39,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | Component Name | files           | Param                                                                             |
 | -------------- | --------------- | --------------------------------------------------------------------------------- |
 | Process Bar    | /src/processBar | process: <String> the name of process <br/> icon: <String> selection of the icons |
-
-|selection|/src/topTabber| tabTitle: the name of tabber selector <br /> selection: selction items|
+| Selector       | /src/topTabber  | tabTitle: the name of tabber selector <br /> selection: selction items            |

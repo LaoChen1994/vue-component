@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" @click="clickOther">
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -7,6 +7,16 @@
     <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    clickOther() {
+      this.$store.commit("appIsClicked");
+    }
+  }
+};
+</script>
 
 <style lang="scss">
 #app {
